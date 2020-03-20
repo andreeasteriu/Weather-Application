@@ -4,10 +4,11 @@ export default class ForecastMap extends Component {
   render() {
     const { items } = this.props;
     const finalObj = {};
+    
     items.forEach(item => {
       const time = new Date(item.dt_txt);
       const day = time.toLocaleDateString("en-us", { weekday: "long" });
-
+        
       if (finalObj[day]) {
         finalObj[day].push(item);
       } else {
@@ -38,7 +39,7 @@ export default class ForecastMap extends Component {
     return (
       <div>
         <div>
-          {day}
+          {/* {day} */}
           {weekday.map(day => (
             <div key={day.dt}>
               {day.time}
