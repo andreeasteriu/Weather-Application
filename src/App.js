@@ -11,8 +11,8 @@ class App extends Component {
         <div className="body-bg">
           <Nav />
           <Switch>
-            <Route path="/forecast" component={Forecast} />
-            <Route path="/" exact component={Main} />
+            <Route path="/weatherapp/forecast" component={Forecast} />
+            <Route path="/weatherapp" exact component={Main} />
           </Switch>
         </div>
       </Router>

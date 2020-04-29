@@ -8,10 +8,10 @@ export default function Nav() {
     color: "#2c3e50",
     fontWeight: "600",
     textDecoration: "none",
-    fontSize: "18px"
+    fontSize: "18px",
   };
   const iconStyle = {
-    fontSize: "1.8em"
+    fontSize: "1.8em",
   };
   return (
     <nav>
@@ -19,10 +19,10 @@ export default function Nav() {
         <FiCloud style={iconStyle} />
       </h3>
       <ul className="nav-links">
-        <Link style={navStyle} to="/">
+        <Link style={navStyle} to="/weatherapp">
           <li>Home</li>
         </Link>
-        <Link style={navStyle} to="/forecast">
+        <Link style={navStyle} to="/weatherapp/forecast">
           <li>Forecast</li>
         </Link>
 
